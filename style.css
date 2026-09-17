@@ -254,9 +254,6 @@ nav a:hover{
 }
 
 .hero-logo-main{
-    mix-blend-mode:multiply;
-    background:transparent;
-    box-shadow:none;
     max-width:280px;
     width:100%;
     height:auto;
@@ -381,17 +378,39 @@ section > p:last-of-type{
 
 /* HISTORY */
 
-.history-content{
+.history-timeline{
     max-width:800px;
-    margin:0 auto;
+    margin:20px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
-.history-content p{
-    line-height:1.9;
-    font-size:16px;
+.history-item{
+    background:linear-gradient(160deg, #65152b, #4a0f1e);
+    border:1px solid rgba(212,175,55,0.4);
+    border-radius:12px;
+    padding:24px 26px;
+    transition:.3s;
+}
+
+.history-item:hover{
+    border-color:gold;
+    box-shadow:0 10px 22px rgba(212,175,55,0.3);
+}
+
+.history-item h3{
+    color:gold;
+    font-size:17px;
+    margin-bottom:10px;
+    text-align:left;
+}
+
+.history-item p{
     color:#e5d3ba;
-    margin-bottom:20px;
-    text-align:center;
+    font-size:15px;
+    line-height:1.8;
+    text-align:left;
 }
 
 /* PRODUCT GRID */
