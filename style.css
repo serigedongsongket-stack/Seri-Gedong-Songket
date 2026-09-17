@@ -254,6 +254,9 @@ nav a:hover{
 }
 
 .hero-logo-main{
+    mix-blend-mode:multiply;
+    background:transparent;
+    box-shadow:none;
     max-width:280px;
     width:100%;
     height:auto;
